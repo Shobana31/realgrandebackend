@@ -8,7 +8,7 @@ const port = 4000
 dotenv.config();
 
 let cors = require('cors');
-let corspolicy = {origin:"http://localhost:3000"}
+let corspolicy = {origin:process.env.FRONTENDURI}
 app.use(cors(corspolicy));
 
 
